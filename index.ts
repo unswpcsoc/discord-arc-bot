@@ -1,5 +1,5 @@
 const main = async () => {
-    console.info('Hello world!');
+  console.info("Hello world!");
 };
 
 main();
