@@ -1,5 +1,6 @@
 {
   "scripts": {
+    "lint": "eslint --fix && prettier --write .",
     "dev": "nodemon index.ts"
   },
   "devDependencies": {
