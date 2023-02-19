@@ -5,7 +5,18 @@ import { registerCommands } from './register_commands';
 
 const main = async () => {
   const logger = new ConsoleLogger();
-  const config = getConfig();
+
+  let config: Config;
+  try {
+    config = getConfig();
+  } catch (err) {
+    if (err instanceof ConfigVariableNotDefinedError) {
+      logger.error(err.message);
+    } else {
+      throw err;
+    }
+    process.exit(1);
+  }
 
   // registerCommands(config.discordBotToken, config.discordApplicationId);
 
