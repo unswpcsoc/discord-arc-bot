@@ -4,15 +4,20 @@ specifiers:
   '@typescript-eslint/eslint-plugin': ^5.52.0
   '@typescript-eslint/parser': ^5.52.0
   discord.js: ^14.7.1
+  dotenv: ^16.0.3
   eslint: ^8.34.0
   eslint-config-prettier: ^8.6.0
   nodemon: ^2.0.20
   prettier: ^2.8.4
   ts-node: ^10.9.1
+  tsconfig-paths: ^4.1.2
   typescript: ^4.9.5
+  zod: ^3.20.6
 
 dependencies:
   discord.js: 14.7.1
+  dotenv: 16.0.3
+  zod: 3.20.6
 
 devDependencies:
   '@typescript-eslint/eslint-plugin': 5.52.0_6cfvjsbua5ptj65675bqcn6oza
@@ -22,6 +27,7 @@ devDependencies:
   nodemon: 2.0.20
   prettier: 2.8.4
   ts-node: 10.9.1_tncu2ai53lzgmizdedur7lbibe
+  tsconfig-paths: 4.1.2
   typescript: 4.9.5
 
 packages:
@@ -751,6 +757,14 @@ packages:
       esutils: 2.0.3
     dev: true
 
+  /dotenv/16.0.3:
+    resolution:
+      {
+        integrity: sha512-7GO6HghkA5fYG9TYnNxi14/7K9f5occMlp3zXAuSxn7CKCxt9xbNWG7yF8hTCSUchlfWSe3uLmlPfigevRItzQ==,
+      }
+    engines: { node: '>=12' }
+    dev: false
+
   /escape-string-regexp/4.0.0:
     resolution:
       {
@@ -1272,6 +1286,15 @@ packages:
       }
     dev: true
 
+  /json5/2.2.3:
+    resolution:
+      {
+        integrity: sha512-XmOWe7eyHYH14cLdVPoyg+GOH3rYX++KpzrylJwSW98t3Nk+U8XOl8FWKOgwtzdb8lXGf6zYwDUzeHMWfxasyg==,
+      }
+    engines: { node: '>=6' }
+    hasBin: true
+    dev: true
+
   /levn/0.4.1:
     resolution:
       {
@@ -1357,6 +1380,13 @@ packages:
       }
     dependencies:
       brace-expansion: 1.1.11
+    dev: true
+
+  /minimist/1.2.8:
+    resolution:
+      {
+        integrity: sha512-2yyAR8qBkN3YuheJanUpWC5U3bb5osDywNB8RzDVlDwDHbocAJveqqj1u8+SVD7jkWT4yvsHCpWqqWqAxb0zCA==,
+      }
     dev: true
 
   /ms/2.1.2:
@@ -1738,6 +1768,14 @@ packages:
       ansi-regex: 5.0.1
     dev: true
 
+  /strip-bom/3.0.0:
+    resolution:
+      {
+        integrity: sha512-vavAMRXOgBVNF6nyEEmL3DBK19iRpDcoIwW+swQ+CbGiu7lju6t+JklA1MHweoWtadgt4ISVUsXLyDq34ddcwA==,
+      }
+    engines: { node: '>=4' }
+    dev: true
+
   /strip-json-comments/3.1.1:
     resolution:
       {
@@ -1854,6 +1892,18 @@ packages:
       typescript: 4.9.5
       v8-compile-cache-lib: 3.0.1
       yn: 3.1.1
+    dev: true
+
+  /tsconfig-paths/4.1.2:
+    resolution:
+      {
+        integrity: sha512-uhxiMgnXQp1IR622dUXI+9Ehnws7i/y6xvpZB9IbUVOPy0muvdvgXeZOn88UcGPiT98Vp3rJPTa8bFoalZ3Qhw==,
+      }
+    engines: { node: '>=6' }
+    dependencies:
+      json5: 2.2.3
+      minimist: 1.2.8
+      strip-bom: 3.0.0
     dev: true
 
   /tslib/1.14.1:
@@ -2014,3 +2064,10 @@ packages:
       }
     engines: { node: '>=10' }
     dev: true
+
+  /zod/3.20.6:
+    resolution:
+      {
+        integrity: sha512-oyu0m54SGCtzh6EClBVqDDlAYRz4jrVtKwQ7ZnsEmMI9HnzuZFj8QFwAY1M5uniIYACdGvv0PBWPF2kO0aNofA==,
+      }
+    dev: false
