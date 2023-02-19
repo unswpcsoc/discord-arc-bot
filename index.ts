@@ -1,12 +1,10 @@
-import {
-  Config,
-  ConfigVariableNotDefinedError,
-  getConfig,
-} from 'config/config';
+import { Config, ConfigVariableNotDefinedError, getConfig } from '@config';
+import { ConsoleLogger } from '@logger/console_logger';
 import { Client, Events, GatewayIntentBits } from 'discord.js';
 import { registerCommands } from './register_commands';
 
 const main = async () => {
+  const logger = new ConsoleLogger();
   const config = getConfig();
 
   // registerCommands(config.discordBotToken, config.discordApplicationId);
