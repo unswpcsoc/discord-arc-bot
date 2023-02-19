@@ -1,5 +1,5 @@
 import chalk from 'chalk';
-import { Logger } from '@logger/logger';
+import { Logger } from '@logger';
 import messages from './messages';
 
 export class ConsoleLogger implements Logger {
