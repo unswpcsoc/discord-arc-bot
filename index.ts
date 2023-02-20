@@ -22,7 +22,6 @@ import { ConsoleLogger } from '@logger/console_logger';
     const bot = new Bot(config, logger, COMMANDS);
     bot.run();
   } catch (err) {
-    console.error('test');
     throw err;
   }
 })();
