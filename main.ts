@@ -1,7 +1,10 @@
-import { Bot } from '@bot';
-import { COMMANDS } from '@commands';
-import { Config, ConfigVariableNotDefinedError, getConfig } from '@config';
-import { ConsoleLogger } from '@logger/console_logger';
+import { createBot } from 'bot/bot';
+import {
+  Config,
+  ConfigVariableNotDefinedError,
+  getConfig,
+} from 'config/config';
+import { ConsoleLogger } from 'logger/console_logger/console_logger';
 
 (async () => {
   const logger = new ConsoleLogger();
@@ -19,7 +22,7 @@ import { ConsoleLogger } from '@logger/console_logger';
   }
 
   try {
-    const bot = new Bot(config, logger, COMMANDS);
+    const bot = await createBot(config, logger);
     bot.run();
   } catch (err) {
     throw err;

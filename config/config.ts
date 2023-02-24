@@ -5,6 +5,7 @@ import messages from './messages';
 const Config = z.object({
   DISCORD_APPLICATION_ID: z.string(),
   DISCORD_BOT_TOKEN: z.string(),
+  DISCORD_GUILD_ID: z.string(),
 });
 
 export type Config = z.infer<typeof Config>;
@@ -22,6 +23,7 @@ export const getConfig = () => {
     return Config.parse({
       DISCORD_APPLICATION_ID: process.env.DISCORD_APPLICATION_ID,
       DISCORD_BOT_TOKEN: process.env.DISCORD_BOT_TOKEN,
+      DISCORD_GUILD_ID: process.env.DISCORD_GUILD_ID,
     });
   } catch (err) {
     if (err instanceof z.ZodError) {

@@ -1,7 +1,8 @@
 {
+  "main": "main.ts",
   "scripts": {
     "lint": "eslint --fix && prettier --write .",
-    "dev": "nodemon index.ts"
+    "dev": "nodemon main.ts"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.52.0",

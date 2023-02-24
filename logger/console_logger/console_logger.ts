@@ -1,10 +1,10 @@
 import chalk from 'chalk';
-import { Logger } from '@logger';
+import { Logger } from 'logger/types';
 import messages from './messages';
 
 export class ConsoleLogger implements Logger {
   trace(message: string) {
-    console.trace(messages.trace(message));
+    console.trace(chalk.magenta(messages.trace(message)));
   }
 
   debug(message: string) {
@@ -12,7 +12,7 @@ export class ConsoleLogger implements Logger {
   }
 
   info(message: string) {
-    console.info(messages.info(message));
+    console.info(chalk.green(messages.info(message)));
   }
 
   warn(message: string) {
