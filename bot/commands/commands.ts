@@ -1,6 +1,5 @@
 import {
   Collection,
-  CommandInteraction,
   RESTPutAPIApplicationCommandsResult,
   Routes,
 } from 'discord.js';
