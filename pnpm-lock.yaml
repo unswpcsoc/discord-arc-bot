@@ -1,9 +1,11 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@types/dedent': ^0.7.0
   '@typescript-eslint/eslint-plugin': ^5.52.0
   '@typescript-eslint/parser': ^5.52.0
   chalk: ^4.1.2
+  dedent: ^0.7.0
   discord.js: ^14.7.1
   dotenv: ^16.0.3
   eslint: ^8.34.0
@@ -17,11 +19,13 @@ specifiers:
 
 dependencies:
   chalk: 4.1.2
+  dedent: 0.7.0
   discord.js: 14.7.1
   dotenv: 16.0.3
   zod: 3.20.6
 
 devDependencies:
+  '@types/dedent': 0.7.0
   '@typescript-eslint/eslint-plugin': 5.52.0_6cfvjsbua5ptj65675bqcn6oza
   '@typescript-eslint/parser': 5.52.0_7kw3g6rralp5ps6mg3uyzz6azm
   eslint: 8.34.0
@@ -254,6 +258,13 @@ packages:
     resolution:
       {
         integrity: sha512-yOlFc+7UtL/89t2ZhjPvvB/DeAr3r+Dq58IgzsFkOAvVC6NMJXmCGjbptdXdR9qsX7pKcTL+s87FtYREi2dEEQ==,
+      }
+    dev: true
+
+  /@types/dedent/0.7.0:
+    resolution:
+      {
+        integrity: sha512-EGlKlgMhnLt/cM4DbUSafFdrkeJoC9Mvnj0PUCU7tFmTjMjNRT957kXCx0wYm3JuEq4o4ZsS5vG+NlkM2DMd2A==,
       }
     dev: true
 
@@ -688,6 +699,13 @@ packages:
     dependencies:
       ms: 2.1.2
     dev: true
+
+  /dedent/0.7.0:
+    resolution:
+      {
+        integrity: sha512-Q6fKUPqnAHAyhiUgFU7BUzLiv0kd8saH9al7tnu5Q/okj6dnupxyTgFIBjVzJATdfIAm9NAsvXNzjaKa+bxVyA==,
+      }
+    dev: false
 
   /deep-is/0.1.4:
     resolution:
