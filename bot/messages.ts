@@ -1,4 +1,5 @@
 export default {
+  activity: (commandName: string) => `/${commandName}`,
   commandImplementationNotFound: (commandName: string) =>
     `Could not find implementation for command ${commandName}.`,
   executingCommand: (commandName: string, userTag: string, userId: string) =>

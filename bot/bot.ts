@@ -4,9 +4,9 @@ import {
   CommandInteraction,
   Events,
   GatewayIntentBits,
-  Interaction,
 } from 'discord.js';
 import { COMMANDS, registerCommands } from 'bot/commands/commands';
+import verify from 'bot/commands/verify/verify';
 import { memberJoinHandler } from 'bot/member_join_handler/member_join_handler';
 import { Config } from 'config/config';
 import { Logger } from 'logger/types';
@@ -31,6 +31,7 @@ export class Bot {
     this.registerMemberJoinHandler();
     await this.registerInteractions();
     await this.session.client.login();
+    this.setStatus();
   }
 
   private registerClientReadyHandler() {
@@ -39,6 +40,10 @@ export class Bot {
         messages.loggedIn(this.session.client.user!.tag),
       );
     });
+  }
+
+  private setStatus() {
+    this.session.client.user!.setActivity(messages.activity(verify.data.name));
   }
 
   private registerMemberJoinHandler() {
