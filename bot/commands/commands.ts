@@ -3,7 +3,6 @@ import {
   RESTPutAPIApplicationCommandsResult,
   Routes,
 } from 'discord.js';
-import ping from 'bot/commands/ping/ping';
 import verify from 'bot/commands/verify/verify';
 import { Session } from 'bot/session';
 import messages from './messages';
@@ -12,7 +11,7 @@ import type { Command } from './types';
 export type { Command };
 
 export const COMMANDS = new Collection(
-  [ping, verify].map((command) => [command.data.name, command]),
+  [verify].map((command) => [command.data.name, command]),
 );
 
 export const registerCommands = async (
