@@ -15,7 +15,7 @@ export default {
     (2b) If not, your email address
     (3b) And your government-issued photo ID (e.g. driver's license or photo card)
     
-    The information you share with us is only accessible by our current executive team - we do not share this with any other parties. You may request to have your record deleted if you are no longer a member of PCSoc.
+    The information you share with us is only accessible by our current executive team - we do not share this with any other parties. You may request to have your record deleted if you are no longer a member of our server.
 
     If you have questions or you're stuck, feel free to message any of our executives. :)
   `,
